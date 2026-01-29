@@ -15,18 +15,13 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
-- `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `bash`, `curl`, `tar`, `uname`: generic POSIX utilities.
 
 # Install
 
 Plugin:
 
 ```shell
-asdf plugin add tfsort
-# or
 asdf plugin add tfsort https://github.com/jtzero/asdf-tfsort.git
 ```
 
@@ -40,7 +35,7 @@ asdf list-all tfsort
 asdf install tfsort latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global tfsort latest
+asdf set --home tfsort latest
 
 # Now tfsort commands are available
 tfsort --help
